@@ -112,7 +112,7 @@ Graduate in keyboard from Bangiya Sangeet Parishad, and in painting from Tripura
 Happy to talk about adaptive feedback control, spatial audio, uncertainty quantification, or getting DSP to survive on a small core.
 
 <p align="left">
-  <a href="aschakra_ashim@outlook.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white"></a>
+  <a href="mailto:aschakra_ashim@outlook.com"><img src="https://img.shields.io/badge/Email-0078D4?style=flat-square&logo=maildotru&logoColor=white"></a>
   <a href="https://www.linkedin.com/in/YOUR-LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
   <a href="https://orcid.org/0009-0001-5506-9588"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=flat-square&logo=orcid&logoColor=white"></a>
   <a href="https://github.com/Dhwaani/Portfolio"><img src="https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=astro&logoColor=white"></a>
