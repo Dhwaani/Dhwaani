@@ -46,18 +46,32 @@ An open-source [FAUST](https://faust.grame.fr) implementation of in-car communic
 
 ### 📐 [SoundFieldUQ](https://github.com/Dhwaani/SoundFieldUQ) — certified sound-field reconstruction
 
-Conformal prediction gives distribution-free coverage guarantees, but breaks under covariate shift unless you know the likelihood ratio `dQ/dP` — which in general you don't.
+Conformal prediction gives distribution-free coverage, but under covariate shift the
+guarantee needs the likelihood ratio `dQ/dP`. Weighted conformal prediction
+(Tibshirani et al., 2019) is exact when that ratio is known — in most applications it
+has to be estimated, and estimation error is where coverage quietly goes.
 
-**The observation:** in sound-field reconstruction you *do*. The covariate is spatial position, and both the calibration-microphone density and the query/listener density are designed by the experimenter. So `dQ/dP` is exactly computable from geometry — the one thing weighted conformal prediction (Tibshirani et al., 2019) normally cannot have.
+**In sound-field reconstruction it doesn't have to be estimated.** The covariate is
+spatial position, and both the calibration-microphone density and the query/listener
+density are chosen by the experimenter — so `dQ/dP` is available in closed form from
+geometry, with no density-ratio estimation step. Known-ratio settings aren't unique to
+acoustics (randomised designs and importance sampling have them too).
+
 
 | Method | Coverage (nominal 0.900) | Beyond calibration support |
 |---|---|---|
 | Split conformal | 0.765 | **0.283 — fails silently** |
 | Exact-ratio weighted conformal | **0.901** | Abstains (infinite intervals, ~87%) |
 
-A **placement corollary** falls out: effective sample size is maximised when *p = q*, so the optimal calibration-microphone layout is a sample from the query density.
+Two things follow from having the ratio exactly rather than approximately. Where
+`dQ/dP` is genuinely unbounded — query points outside the calibration support — the
+method **abstains** with infinite intervals instead of silently under-covering; an
+estimated ratio cannot separate a true singularity from estimator blow-up. And because
+effective sample size is maximised when *p = q*, the optimal calibration-microphone
+layout is a sample from the query density — a **placement** result, not just an
+inference one.
 
-Pure MATLAB, base install only — no toolboxes, fully synthetic image-source data, zero hardware. 60 `.m` files · ~3400 lines · 8 experiments · 10 figures · 6 test classes. Every algorithm cross-verified in Python before porting; expected values in `docs/expected_results.md`. *Paper in preparation.*
+Pure MATLAB, base install only — no toolboxes, fully synthetic image-source data, zero hardware.
 
 ### 🎚️ [AudioDSPDesign](https://github.com/Dhwaani/AudioDSPDesign)
 Full-duplex dsp chain design for 1mic voice communication studies and implementation on AudioWeaver
