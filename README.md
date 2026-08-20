@@ -74,7 +74,7 @@ inference one.
 Pure MATLAB, base install only — no toolboxes, fully synthetic image-source data, zero hardware.
 
 ### 🎚️ [AudioDSPDesign](https://github.com/Dhwaani/AudioDSPDesign)
-Full-duplex dsp chain design for 1mic voice communication studies and implementation on AudioWeaver
+Full-duplex dsp chain design for 1mic voice communication chain on AudioWeaver
 
 ---
 
