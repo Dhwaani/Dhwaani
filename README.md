@@ -1,4 +1,4 @@
-<h1 align="center">Aashmita Chakraborty</h1>
+<h1 align="center">Ashmita Chakraborty</h1>
 
 <p align="center">
   <b>Real-Time Audio DSP · Acoustics · Embedded Systems/Firmware</b><br>
