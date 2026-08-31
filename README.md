@@ -112,6 +112,19 @@ A multi-modal audio-visual tracking framework leveraging Random Finite Set (RFS)
 * **Random Finite Set Formulation:** Handles varying talker counts, track creation, and track loss without explicit target-to-observation data association overhead or track-switching failures under multi-speaker overlap.
 * **Audio-Visual Sensor Fusion:** Fuses spatial audio Direction-of-Arrival (DoA) vectors with visual detection bounding boxes to maintain continuous trajectory estimation during severe visual occlusions.
 * **Validation Scope & Upper Bounds:** Evaluated under measurement-level baseline sweeps to establish theoretical upper bounds across visibility regimes prior to full end-to-end evaluation on real-world datasets like AVA-AVD.
+
+### 👁️ [Vision](https://github.com/Dhwaani/Vision) — Dynamic Visual Perception & Multi-Target Tracking
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![CUDA](https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
+
+A high-throughput computer vision pipeline designed for spatial target detection, temporal trajectory estimation, and robust feature extraction under dynamic lighting and severe occlusions.
+
+* **Temporal Feature Association:** Implements multi-frame feature tracking and temporal bounding box association to eliminate track fragmentation during transient target occlusions.
+* **Low-Latency Spatial Inference:** Optimizes visual backbone architectures (TorchScript/TensorRT) to achieve real-time frame processing within strict edge-compute latency budgets ($< 15\text{ ms}$).
+* **Robustness & Domain Generalization:** Evaluated against challenging spatial datasets featuring variable illumination, dynamic camera movement, and dense multi-object interaction.
 ---
 
 ## 🏭 Where This Comes From
