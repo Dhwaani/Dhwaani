@@ -100,7 +100,7 @@ A MetricGAN-inspired framework for acoustic feedback suppression that replaces n
 
 ---
 
-### 🎥 [AV-TalkerRFS](https://github.com/Dhwaani/AV-Talker-RFS) — Audio-Visual Spatial Talker Tracking via Random Finite Sets
+### 🎥 [AV-TalkerRFS](https://github.com/Dhwaani/AV-TalkerRFS) — Audio-Visual Spatial Talker Tracking via Random Finite Sets
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
