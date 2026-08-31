@@ -33,6 +33,10 @@ The through-line: I've spent my career on the side of audio where the algorithm 
 Both are self-contained, documented, and reproducible from a clean checkout.
 
 ### 🔊 [In-CarCommunication](https://github.com/Dhwaani/In-CarCommunication) — adaptive howling suppression in FAUST
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![MATLAB](https://img.shields.io/badge/MATLAB-e16737?style=for-the-badge&logo=mathworks&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
 An open-source [FAUST](https://faust.grame.fr) implementation of in-car communication (ICC): cabin speech picked up, processed, and replayed through the same cabin's loudspeakers — a closed electro-acoustic loop that wants to howl.
 
@@ -45,6 +49,9 @@ An open-source [FAUST](https://faust.grame.fr) implementation of in-car communic
 `lib/icc.lib` + three designs · ~700 lines of FAUST · verified against FAUST 2.70.3 · C/C++/Rust backends confirmed · CI · `CITATION.cff`
 
 ### 📐 [SoundFieldUQ](https://github.com/Dhwaani/SoundFieldUQ) — certified sound-field reconstruction
+![MATLAB](https://img.shields.io/badge/MATLAB-e16737?style=for-the-badge&logo=mathworks&logoColor=white)
+![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white)
+![Signal Processing](https://img.shields.io/badge/Signal_Processing-00599C?style=for-the-badge)
 
 Conformal prediction gives distribution-free coverage, but under covariate shift the
 guarantee needs the likelihood ratio `dQ/dP`. Weighted conformal prediction
@@ -74,8 +81,37 @@ inference one.
 Pure MATLAB, base install only — no toolboxes, fully synthetic image-source data, zero hardware.
 
 ### 🎚️ [AudioDSPDesign](https://github.com/Dhwaani/AudioDSPDesign)
-Full-duplex dsp chain design for 1mic voice communication chain on AudioWeaver
+![Audio Weaver](https://img.shields.io/badge/Audio_Weaver-DSP_Concepts-005A9C?style=for-the-badge)
+![AudioDSP](https://img.shields.io/badge/AudioDSP-Signal_Processing-008080?style=for-the-badge)
 
+Full-duplex dsp chain design for 1mic voice communication chain on AudioWeaver
+### 🎛️ [StabilityGAN](https://github.com/Dhwaani/StabilityGAN) — Data-Driven Feedback Control via Metric Surrogates
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)
+
+A MetricGAN-inspired framework for acoustic feedback suppression that replaces non-differentiable loop bifurcation points with a learned surrogate predictor (`StabilityNet`) to directly optimize notch filter allocation.
+
+* **Differentiable MSG Estimation:** Trains a neural surrogate to estimate continuous Maximum Stable Gain (MSG) headroom, enabling end-to-end policy optimization where physical loop oscillation prevents direct gradient backpropagation.
+* **Group Delay & Phase Shift Dynamics:** Quantifies how notch bank group delay alters loop phase alignment. High-order filters (Length 513) destabilize the loop (**−8.00 dB** stable gain) by shifting howling to adjacent frequencies, whereas lower-order filters (Length 31) achieve **+7.75 dB** of added stable gain.
+* **Oracle-Placed Benchmarks:** Isolates physical phase delay from detection errors by testing against ground-truth howling frequencies, proving filter length trade-offs are physical rather than algorithmic.
+
+---
+
+### 🎥 [AV-TalkerRFS](https://github.com/Dhwaani/AV-Talker-RFS) — Audio-Visual Spatial Talker Tracking via Random Finite Sets
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+A multi-modal audio-visual tracking framework leveraging Random Finite Set (RFS) filter dynamics for dynamic spatial speaker localization and state estimation under visibility shifts.
+
+* **Random Finite Set Formulation:** Handles varying talker counts, track creation, and track loss without explicit target-to-observation data association overhead or track-switching failures under multi-speaker overlap.
+* **Audio-Visual Sensor Fusion:** Fuses spatial audio Direction-of-Arrival (DoA) vectors with visual detection bounding boxes to maintain continuous trajectory estimation during severe visual occlusions.
+* **Validation Scope & Upper Bounds:** Evaluated under measurement-level baseline sweeps to establish theoretical upper bounds across visibility regimes prior to full end-to-end evaluation on real-world datasets like AVA-AVD.
 ---
 
 ## 🏭 Where This Comes From
