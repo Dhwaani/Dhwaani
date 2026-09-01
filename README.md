@@ -33,9 +33,7 @@ The through-line: I've spent my career on the side of audio where the algorithm 
 Both are self-contained, documented, and reproducible from a clean checkout.
 
 ### 🔊 [In-CarCommunication](https://github.com/Dhwaani/In-CarCommunication) — adaptive howling suppression in FAUST
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![MATLAB](https://img.shields.io/badge/MATLAB-e16737?style=for-the-badge&logo=mathworks&logoColor=white)
+![FAUST](https://img.shields.io/badge/FAUST-Audio_DSP-FF5500?style=for-the-badge)
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
 An open-source [FAUST](https://faust.grame.fr) implementation of in-car communication (ICC): cabin speech picked up, processed, and replayed through the same cabin's loudspeakers — a closed electro-acoustic loop that wants to howl.
@@ -50,7 +48,6 @@ An open-source [FAUST](https://faust.grame.fr) implementation of in-car communic
 
 ### 📐 [SoundFieldUQ](https://github.com/Dhwaani/SoundFieldUQ) — certified sound-field reconstruction
 ![MATLAB](https://img.shields.io/badge/MATLAB-e16737?style=for-the-badge&logo=mathworks&logoColor=white)
-![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white)
 ![Signal Processing](https://img.shields.io/badge/Signal_Processing-00599C?style=for-the-badge)
 
 Conformal prediction gives distribution-free coverage, but under covariate shift the
@@ -118,7 +115,6 @@ A multi-modal audio-visual tracking framework leveraging Random Finite Set (RFS)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![CUDA](https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
 
 A high-throughput computer vision pipeline designed for spatial target detection, temporal trajectory estimation, and robust feature extraction under dynamic lighting and severe occlusions.
 
