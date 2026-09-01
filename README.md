@@ -150,7 +150,7 @@ Seven years of production audio and systems firmware — the reason I care about
 - **arXiv 2025** — Conversational AI dialog for medicare, powered by fine-tuning and retrieval-augmented generation
 - **2024** — AI-engine-based acceleration for high-performance programmable SoC designs
 - **3 published Indian patents** (Dec 2024) — semantic role labelling for sentiment analysis · RAG-based conversational AI · fine-tuned BERT for relation extraction and NER
-- *In preparation* — SoundFieldUQ; neuromorphic drowsiness prediction with multi-sensor fusion
+- *In preparation* — neuromorphic drowsiness prediction with multi-sensor fusion
 
 🔗 [ORCID 0009-0001-5506-9588](https://orcid.org/0009-0001-5506-9588)
 
