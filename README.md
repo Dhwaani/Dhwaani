@@ -28,7 +28,7 @@ The through-line: I've spent my career on the side of audio where the algorithm 
 
 ---
 
-## 📌 Research Artifacts
+## 📌 Project Artifacts
 
 Both are self-contained, documented, and reproducible from a clean checkout.
 
