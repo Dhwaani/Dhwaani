@@ -121,6 +121,15 @@ A high-throughput computer vision pipeline designed for spatial target detection
 * **Temporal Feature Association:** Implements multi-frame feature tracking and temporal bounding box association to eliminate track fragmentation during transient target occlusions.
 * **Low-Latency Spatial Inference:** Optimizes visual backbone architectures (TorchScript/TensorRT) to achieve real-time frame processing within strict edge-compute latency budgets ($< 15\text{ ms}$).
 * **Robustness & Domain Generalization:** Evaluated against challenging spatial datasets featuring variable illumination, dynamic camera movement, and dense multi-object interaction.
+
+### 🚀 [ns3-dtn-leo](https://github.com/Dhwaani/ns3-dtn-leo) — Delay-Tolerant Networking with ns-3 for LEO satellite scenarios
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+
+Simulation modules and scripts for Delay-Tolerant Networking (DTN) in Low Earth Orbit (LEO) constellations using ns-3.
+
+- ns-3 scenario scripts modelling intermittent contacts, store-and-forward routing, and contact plan generation for LEO satellites
+- Bundle protocol and routing evaluation (latency, delivery ratio, buffer utilisation) across constellation and ground-station topologies
+- Reproducible experiments with run scripts, parameter sweeps, and plotting utilities; documentation in README with quickstart and dependencies
 ---
 
 ## 🏭 Where This Comes From
