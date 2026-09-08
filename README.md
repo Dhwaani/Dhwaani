@@ -142,7 +142,8 @@ Seven years of production audio and systems firmware — the reason I care about
 | **HemodynamiQ** | Zephyr RTOS BLE telemetry and DFT-based bioimpedance measurement — 8192-point DFT with Hann window, per-frequency calibration |
 | **Harman India** | Audio HAL/DSP lead — designed full- and half-duplex communication systems from scratch for hospital nurse-call products (Systevo), collaborating with the German team on DSP architecture across ARM Cortex-M7 and A53 |
 | **Qualcomm** | AudioReach framework on an RTOS smartwatch — HFP call support, audio use-case graphs, stream Rx/Tx design with IIR/FIR filter chains |
-| **AMD · L&T (Intel)** | Server platform security and Android automotive BSP — Secure Debug Unlock, microcode patching, coreboot/UEFI bring-up with sub-2s boot |
+| **AMD** | Server platform security processor: Daytona, Milan, Bardpeak — Secure Debug Unlock, microcode patching|
+| **L&T (Intel & Airspan)** | Coreboot/UEFI bring-up with sub-2s boot  and Android automotive BSP, Android Camera for the rear view and Android Audio for the front speakers|
 
 **Also:** Visiting Researcher at IISc Bangalore (CSA) — sliding-mode control with control barrier functions for multi-agent robots, and over-synchronization in CUDA programs. Full-time open-source contributor to [coreboot](https://coreboot.org) and the [OpenID Foundation](https://openid.net).
 
