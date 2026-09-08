@@ -89,7 +89,7 @@ Full-duplex dsp chain design for 1mic voice communication chain on AudioWeaver
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)
 
-A MetricGAN-inspired framework for acoustic feedback suppression that replaces non-differentiable loop bifurcation points with a learned surrogate predictor (`StabilityNet`) to directly optimize notch filter allocation.
+A MetricGAN-inspired framework for acoustic feedback suppression that replaces non-differentiable loop bifurcation points with a learned surrogate predictor (`StabilityNet`) to directly optimize notch filter allocation. It is an extension of [In-CarCommunication or Faust-ICC](https://github.com/Dhwaani/In-CarCommunication)
 
 * **Differentiable MSG Estimation:** Trains a neural surrogate to estimate continuous Maximum Stable Gain (MSG) headroom, enabling end-to-end policy optimization where physical loop oscillation prevents direct gradient backpropagation.
 * **Group Delay & Phase Shift Dynamics:** Quantifies how notch bank group delay alters loop phase alignment. High-order filters (Length 513) destabilize the loop (**−8.00 dB** stable gain) by shifting howling to adjacent frequencies, whereas lower-order filters (Length 31) achieve **+7.75 dB** of added stable gain.
