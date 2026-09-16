@@ -172,7 +172,7 @@ Seven years of production audio and systems firmware — the reason I care about
 
 ## 🎹 Beyond the Code
 
-Graduate in keyboard from Bangiya Sangeet Parishad, and in painting from Tripura Fine Arts Academy with distinction. *Dhwaani* — my handle — means resonance.
+Graduated in keyboard from Bangiya Sangeet Parishad affiliated with Rabindra Bharati University (Kolkata) and recognized by Indira Kala Sangeet Vishwavidyalaya and the Government of Assam, and graduated in painting from Tripura Fine Arts Academy with first division and distinction. *Dhwaani* — my handle — means *Resonance*.
 
 ---
 
