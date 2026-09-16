@@ -136,7 +136,17 @@ Simulation modules and scripts for Delay-Tolerant Networking (DTN) in Low Earth 
 
 Seven years of production audio and systems firmware — the reason I care about cycle budgets and failure modes rather than just algorithms.
 
-| | |
+#### 🔬 Research & Open Source
+
+| Where | What I Worked On |
+|---|---|
+| **IISc Bangalore — ZEN Lab, DESE** | As a project research associate, worked on wireless distributed edge systems; evaluated cabin-crew devices as edge nodes; built testbeds around IEEE 802.11k/v/r and DTN; integrated Android `wpa_supplicant` with FastAPI; developed an algorithm for adaptive redundancy, device selection, and hybrid data transmission/power management |
+| **IISc Bangalore — CPDM Lab** | As a product designer, I collaborated with UI/UX researchers on the design and development of AR/VR and haptic navigation systems, combining interaction design with user research methodologies. This work deepened my understanding of human-computer interaction principles and strengthened my ability to communicate technical concepts to diverse stakeholders. |
+| **Open Source & Standards** | **coreboot + OpenID Foundation** — open-source firmware and digital-identity/protocol work |
+
+#### ⚙️ Production Systems
+
+| Where | What I Worked On |
 |---|---|
 | **AINA Computer** | Smart-ring voice UI on QCC5181 — wideband 2-mic cVc end-fire tuning, AVC, echo cancellation and noise suppression in the Kalimba DSP |
 | **HemodynamiQ** | Zephyr RTOS BLE telemetry and DFT-based bioimpedance measurement — 8192-point DFT with Hann window, per-frequency calibration |
