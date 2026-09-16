@@ -155,8 +155,6 @@ Seven years of production audio and systems firmware — the reason I care about
 | **AMD** | Server platform security processor: Daytona, Milan, Bardpeak — Secure Debug Unlock feature design & development, core-complex microcode patching feature design & development|
 | **L&T (Intel & Airspan)** | Coreboot/UEFI bring-up with sub-2s boot  and Android automotive BSP, Android Camera for the rear view and Android Audio for the front speakers|
 
-**Also:** Visiting Researcher at IISc Bangalore (CSA) — sliding-mode control with control barrier functions for multi-agent robots, and over-synchronization in CUDA programs. Full-time open-source contributor to [coreboot](https://coreboot.org) and the [OpenID Foundation](https://openid.net).
-
 ---
 
 ## 📚 Publications & Patents
