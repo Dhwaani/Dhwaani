@@ -95,7 +95,13 @@ A MetricGAN-inspired framework for acoustic feedback suppression that replaces n
 * **Group Delay & Phase Shift Dynamics:** Quantifies how notch bank group delay alters loop phase alignment. High-order filters (Length 513) destabilize the loop (**−8.00 dB** stable gain) by shifting howling to adjacent frequencies, whereas lower-order filters (Length 31) achieve **+7.75 dB** of added stable gain.
 * **Oracle-Placed Benchmarks:** Isolates physical phase delay from detection errors by testing against ground-truth howling frequencies, proving filter length trade-offs are physical rather than algorithmic.
 
----
+### 📡 [Coherence²](https://github.com/Dhwaani/CoherenceSquared) — blind synchronisation for asynchronous multimodal audio
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FAUST](https://img.shields.io/badge/FAUST-Audio_DSP-FF5500?style=for-the-badge)
+![Signal Processing](https://img.shields.io/badge/Signal_Processing-8A2BE2?style=for-the-badge)
+
+Blind SRO estimation for asynchronous air-microphone and body-conduction sensor fusion. It introduces class-conditioned coherence drift to handle signal-dependent acoustic channels, includes reproducible Python experiments, unsupervised conditioning studies, and a FAUST real-time DSP kernel. This is validated through experiments, with real-speech validation planned using the Vibravox dataset.
 
 ### 🎥 [AV-TalkerRFS](https://github.com/Dhwaani/AV-TalkerRFS) — Audio-Visual Spatial Talker Tracking via Random Finite Sets
 
