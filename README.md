@@ -50,32 +50,7 @@ An open-source [FAUST](https://faust.grame.fr) implementation of in-car communic
 ![MATLAB](https://img.shields.io/badge/MATLAB-e16737?style=for-the-badge&logo=mathworks&logoColor=white)
 ![Signal Processing](https://img.shields.io/badge/Signal_Processing-00599C?style=for-the-badge)
 
-Conformal prediction gives distribution-free coverage, but under covariate shift the
-guarantee needs the likelihood ratio `dQ/dP`. Weighted conformal prediction
-(Tibshirani et al., 2019) is exact when that ratio is known — in most applications it
-has to be estimated, and estimation error is where coverage quietly goes.
-
-**In sound-field reconstruction it doesn't have to be estimated.** The covariate is
-spatial position, and both the calibration-microphone density and the query/listener
-density are chosen by the experimenter — so `dQ/dP` is available in closed form from
-geometry, with no density-ratio estimation step. Known-ratio settings aren't unique to
-acoustics (randomised designs and importance sampling have them too).
-
-
-| Method | Coverage (nominal 0.900) | Beyond calibration support |
-|---|---|---|
-| Split conformal | 0.765 | **0.283 — fails silently** |
-| Exact-ratio weighted conformal | **0.901** | Abstains (infinite intervals, ~87%) |
-
-Two things follow from having the ratio exactly rather than approximately. Where
-`dQ/dP` is genuinely unbounded — query points outside the calibration support — the
-method **abstains** with infinite intervals instead of silently under-covering; an
-estimated ratio cannot separate a true singularity from estimator blow-up. And because
-effective sample size is maximised when *p = q*, the optimal calibration-microphone
-layout is a sample from the query density — a **placement** result, not just an
-inference one.
-
-Pure MATLAB, base install only — no toolboxes, fully synthetic image-source data, zero hardware.
+Conformal prediction gives distribution-free coverage, but standard weighted methods rely on estimated likelihood ratios $dQ/dP$, where estimation errors degrade coverage. In sound-field reconstruction, $dQ/dP$ is known analytically from spatial geometry, enabling exact coverage guarantees without estimation step errors. It replaces density-ratio estimation with analytical spatial ratios to achieve **0.901 coverage** vs. 0.900 nominal (compared to **0.765** for split conformal), while explicitly abstaining (~87% infinite prediction intervals) outside calibration support instead of failing silently (0.283 coverage). Furthermore, it proves that effective sample size is maximized when the calibration microphone layout directly mirrors the target query density, providing an optimal physical placement strategy in a pure base MATLAB implementation with reproducible synthetic image-source generation.
 
 ### 🎚️ [AudioDSPDesign](https://github.com/Dhwaani/AudioDSPDesign)
 ![Audio Weaver](https://img.shields.io/badge/Audio_Weaver-DSP_Concepts-005A9C?style=for-the-badge)
