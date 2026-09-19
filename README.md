@@ -32,7 +32,7 @@ The through-line: I've spent my career on the side of audio where the algorithm 
 
 Both are self-contained, documented, and reproducible from a clean checkout.
 
-### 🔊 [In-CarCommunication](https://github.com/Dhwaani/In-CarCommunication) — adaptive howling suppression in FAUST
+### 🔊 [In-CarCommunication](https://github.com/Dhwaani/In-CarCommunication) — Adaptive howling suppression in FAUST
 ![FAUST](https://img.shields.io/badge/FAUST-Audio_DSP-FF5500?style=for-the-badge)
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
@@ -46,7 +46,7 @@ An open-source [FAUST](https://faust.grame.fr) implementation of in-car communic
 
 `lib/icc.lib` + three designs · ~700 lines of FAUST · verified against FAUST 2.70.3 · C/C++/Rust backends confirmed · CI · `CITATION.cff`
 
-### 📐 [SoundFieldUQ](https://github.com/Dhwaani/SoundFieldUQ) — certified sound-field reconstruction
+### 📐 [SoundFieldUQ](https://github.com/Dhwaani/SoundFieldUQ) — Certified sound-field reconstruction
 ![MATLAB](https://img.shields.io/badge/MATLAB-e16737?style=for-the-badge&logo=mathworks&logoColor=white)
 ![Signal Processing](https://img.shields.io/badge/Signal_Processing-00599C?style=for-the-badge)
 
@@ -82,7 +82,7 @@ Pure MATLAB, base install only — no toolboxes, fully synthetic image-source da
 ![AudioDSP](https://img.shields.io/badge/AudioDSP-Signal_Processing-008080?style=for-the-badge)
 
 Full-duplex dsp chain design for 1mic voice communication chain on AudioWeaver
-### 🎛️ [StabilityGAN](https://github.com/Dhwaani/StabilityGAN) — Data-Driven Feedback Control via Metric Surrogates
+### 🎛️ [StabilityGAN](https://github.com/Dhwaani/StabilityGAN) — Data-driven feedback control via metric surrogates
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
@@ -95,7 +95,7 @@ A MetricGAN-inspired framework for acoustic feedback suppression that replaces n
 * **Group Delay & Phase Shift Dynamics:** Quantifies how notch bank group delay alters loop phase alignment. High-order filters (Length 513) destabilize the loop (**−8.00 dB** stable gain) by shifting howling to adjacent frequencies, whereas lower-order filters (Length 31) achieve **+7.75 dB** of added stable gain.
 * **Oracle-Placed Benchmarks:** Isolates physical phase delay from detection errors by testing against ground-truth howling frequencies, proving filter length trade-offs are physical rather than algorithmic.
 
-### 📡 [Coherence²](https://github.com/Dhwaani/CoherenceSquared) — blind synchronisation for asynchronous multimodal audio
+### 📡 [Coherence²](https://github.com/Dhwaani/CoherenceSquared) — Blind synchronisation for asynchronous multimodal audio
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![FAUST](https://img.shields.io/badge/FAUST-Audio_DSP-FF5500?style=for-the-badge)
@@ -103,7 +103,7 @@ A MetricGAN-inspired framework for acoustic feedback suppression that replaces n
 
 Blind SRO estimation for asynchronous air-microphone and body-conduction sensor fusion. It introduces class-conditioned coherence drift to handle signal-dependent acoustic channels, includes reproducible Python experiments, unsupervised conditioning studies, and a FAUST real-time DSP kernel. This is validated through experiments, with real-speech validation planned using the Vibravox dataset.
 
-### 🎥 [AV-TalkerRFS](https://github.com/Dhwaani/AV-TalkerRFS) — Audio-Visual Spatial Talker Tracking via Random Finite Sets
+### 🎥 [AV-TalkerRFS](https://github.com/Dhwaani/AV-TalkerRFS) — Audio-visual spatial talker tracking via random finite sets
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
@@ -116,7 +116,7 @@ A multi-modal audio-visual tracking framework leveraging Random Finite Set (RFS)
 * **Audio-Visual Sensor Fusion:** Fuses spatial audio Direction-of-Arrival (DoA) vectors with visual detection bounding boxes to maintain continuous trajectory estimation during severe visual occlusions.
 * **Validation Scope & Upper Bounds:** Evaluated under measurement-level baseline sweeps to establish theoretical upper bounds across visibility regimes prior to full end-to-end evaluation on real-world datasets like AVA-AVD.
 
-### 👁️ [Vision](https://github.com/Dhwaani/Vision) — Dynamic Visual Perception & Multi-Target Tracking
+### 👁️ [Vision](https://github.com/Dhwaani/Vision) — Dynamic visual perception
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
